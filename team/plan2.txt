@@ -1,0 +1,52 @@
+Classes:
+    Program:
+    **Optional: pick scripture from library**
+    Change the scripture
+    Gather user input
+    Quit to finish the program
+    Program ends if all scripture is marked as hidden
+    
+    Scripture:
+        Behaviors:
+        Multiple constructors for verse and multi-verse options
+        Display the scripture
+        Keep track of if the scripture is completely hidden or not
+        
+        Attributes:
+        Array of words called scripture 
+        
+        Constructors:
+        Reference
+        Scriptrue 
+
+    Reference:
+        Behaviors:
+        Display the reference.
+        Keep track of the reference associated with the Scripture object
+
+        Attributes:
+        book
+        chapter 
+        verse
+        end verse (if a multi-verse)
+
+        Constructors:
+        Single verse
+        multi-verse
+
+    Word:
+        Behaviors:
+        Determine what the hidden word length is
+            for i=0; i < array[i].length; i++
+            hiddenString += _; 
+        Keep track of a single work and whether it is marked or hidden 
+
+        Attributes:
+        boolean isVisible
+        Hidden word
+        Shown word
+
+        Constructor:
+        Accept a string and save it as well as create a string for hidden word
+
+Interactions:

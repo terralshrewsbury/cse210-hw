@@ -1,0 +1,46 @@
+**Planning elements for "Design Activity"**
+ - Team Thursday 2pm
+
+ Classes:
+    
+    Program:
+        Responsibilities/Behaviors:
+            * Start the program
+            * Display the menu
+            * Gather actions from the user
+            * Call other functions/create objects/terminate the program
+
+    Get_date:
+        Responsibilities/Behaviors:
+            *acuqire date and time from system 
+            *save to a variable
+    Write:
+        Responsibilities/Behaviors:
+            * Open text box to write thoughts and activites
+        
+    Prompt:
+        Responsibilities/Behaviors:
+            * Call PromptGenerator
+            * Display it to the user
+            * Call GetDate 
+            * Store all the information into a local variable
+    
+    PromptGenerator: 
+        Responsibilities/Behaviors:
+            * Choose a random prompt from a list and provide it to the user
+
+    Display:
+        Responsibilities/Behaviors:
+            * iterate through previously saved entries
+            * display the data to the user
+    
+    Load:
+        Responsibilities/Behaviors:
+            * Open file
+            * Save everything from the file as a list
+            * Close file
+
+    Save:
+        Responsibilities/Behaviors:            
+            * Take all the local variables and save them in a readable format to 
+              a file of the users choosing
