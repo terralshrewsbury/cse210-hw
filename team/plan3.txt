@@ -1,0 +1,62 @@
+W07 Team Activity: Designer
+
+Classes
+    Program
+        Behaviors
+            - Get input from the user
+            - Display the menu
+            - Create the activity objects
+            - Quits the mindfullness activity
+
+        Attributes
+            - User input
+
+    Activity
+        Behaviors(methods)
+            - Using a countdown/pause timer: PauseTimer(x): do the countdowns
+            - Displaying the starting message: DisplayStartMessage(): string
+            - Displaying the ending message: DisplayEndMessage(): string
+            - Pausing while showing the animation PauseAnimation(): 
+            - Pausing while showing the countdown: PauseCountdown():
+            - Showing the animation: DisplayAnimation(): 
+            - Showing the countdown DisplayCountdown():
+            - How long would you like to work on this activity: LengthOfActivity(x), setter
+
+        Attributes(variables)
+            - standard starting message:string
+            - finishing message:string
+            - standard duration in seconds for initial pause: int
+            - totalActivityTime 
+    
+    BreathingActivity
+        Behaviors 
+            - Run activity: public runBreathing():
+            - breathIn():write to console
+            - breathOut():
+            - once the timer is out, break from the run function and go back to the menu
+
+        Attributes
+            - None. Everything will be interited from Activity
+
+    ReflectingActivity
+        Behaviors 
+            - Run activity: public runReflecting():
+            - Get a random prompt private string GetPrompt();
+            - Display the prompt
+            - Display questions about the prompt and get answers
+            - countItems+=1
+            _ DisplayCount(): int
+
+        Attributes
+            private countItems=0
+            private ListofRandomPromts=[]
+
+    ListingActivity
+        Behaviors 
+            - Run activity: public runListing():
+
+        Attributes
+            private ListofRandomPromts=[]
+            
+    
+
