@@ -5,6 +5,7 @@ public class Listing : Activity
     private string _activity = "Listing";
     private string _discription = "reflect on the good things in your life by having you list as many things as you can in a certain area";
     private int _count = 0;
+    
     private void AddToList()
     {
         _prompts.Add("Who are people that you appreciate?");
@@ -37,7 +38,6 @@ public class Listing : Activity
             Console.Write(">");
             Console.ReadLine();
             _count ++;
-                        
         }while (LengthOfActivity(_futureTime) == true);
         PauseAnimation(1000);
         Console.WriteLine($"You listed {_count} items!");
@@ -45,10 +45,7 @@ public class Listing : Activity
         Console.WriteLine(DisplayEndMessage(_activity,_standardDuration));
         Console.WriteLine("");
         PauseAnimation(5000);
-        Console.Clear();
-
-
-  
+        Console.Clear();  
     }
 
 }

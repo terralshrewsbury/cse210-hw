@@ -5,6 +5,7 @@ public class Breathing : Activity
 {
     private string _activity = "Breathing";
     private string _discription = "walking you through breathing in and out slowly. Clear your mind and focus on your breathing";
+    
     public void RunBreathingActivity()
     {
         Console.Clear();
@@ -29,14 +30,12 @@ public class Breathing : Activity
         Console.WriteLine("");
         PauseAnimation(5000);
         Console.Clear();
-        
     }
 
     public void BreatheIn()
     {
         Console.Write("Breathe In... ");
         PauseCountdown(3000);
-        
     }
 
     public void Hold()

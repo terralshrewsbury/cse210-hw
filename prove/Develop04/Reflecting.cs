@@ -8,6 +8,7 @@ public class Reflecting : Activity
     private List<string> _usedQuestions = new List<string>();
     private string _activity = "Reflecting";
     private string _discription = "reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
+    
     private void AddToList()
     {
         _prompts.Add("Think of a time when you stood up for someone else.");
@@ -54,8 +55,7 @@ public class Reflecting : Activity
         {
             string _randomQuestion = GetRandomUnseenQuestionOrPrompt(_questions, _usedQuestions);
             Console.WriteLine ($"> {_randomQuestion}");
-            PauseAnimation(5000);
-            
+            PauseAnimation(5000); 
         }while (LengthOfActivity(_futureTime) == true);
         PauseAnimation(1000);
         Console.WriteLine("");
@@ -64,8 +64,4 @@ public class Reflecting : Activity
         PauseAnimation(5000);
         Console.Clear();
     }
-
-
-
-
 }
