@@ -1,0 +1,96 @@
+Class Main()
+    List<Goals> goals = new List<Goals>();
+    _currentpoints;
+    _menuSelection = 0
+    public DisplayMenu()
+    {
+        console.WriteLine("1. Create New Goal");
+        console.WriteLine("2. List Goal");
+        console.WriteLine("3. Save Goals");
+        console.WriteLine("4. load Goals");
+        console.WriteLine("5. Record Event");
+        console.WriteLine("6. Quit");
+    }
+
+
+    do{ 
+        console.WriteLine(_currentpoints\n);
+        DisplayMenu();
+        console.WriteLine("Select a Choice from the Menu: ");
+        int _menuSelection = console.Read();
+    }while(menuSelection != 6)
+
+        ListGoals(goals) to list all of the goals
+        foreach (goal in Goals)
+        {
+        type out the iteration connections.
+        }
+
+Constructor: empty
+
+Class (base) Goal()
+    Attributes:
+        privite int _points;
+        privite string _goalType;
+        privite string _goalName;
+        privite string _goalDescription;
+        privite string _filename;
+
+
+    Methods:
+        LoadGoals();
+        SaveGoals();
+        RecordEvent();
+        bool IsComplete();
+        displayGoal();
+        Getters();
+        Setters();
+
+
+
+
+Class SimpleGoals()
+    Attributes:
+
+
+
+
+    Methods:
+        override DisplayGoal();
+        constructor(s): goaltype, name, description, points, completed
+        
+
+
+
+
+Class EternalGoals()
+    Attributes:
+
+
+
+
+    Methods:
+        constructor(s): goaltype, name, description, points
+        override DisplayGoal();
+        override bool IsComplete(False);
+
+
+
+
+Class ChecklistGoals()
+    Attributes:
+        int _partialCompleted;
+        int _completedNumber;
+        int _bonusPoints;
+
+
+
+    Methods:
+        constructor(s): goaltype, name, description, points, bonuspoints, _partialCompleted, _completedNumber
+        override DisplayGoal();
+        override bool IsComplete();
+
+
+
+
+
